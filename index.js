@@ -1,9 +1,10 @@
 
 // List of sentences
 var _CONTENT = [ 
-	"hi faye", 
-	"you are a bitch", 
-	"jk lol "
+	"a Student", 
+	"a Developer", 
+	"a Problem Solver",
+	"an Engineer"
 ];
 
 // Current sentence being processed
