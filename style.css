@@ -21,7 +21,6 @@ body {
     left: 1.5%;
 }
 
-
 .nav-right a, .nav-left a {
     color: white;
     font-size: 1.5rem;
@@ -33,8 +32,8 @@ body {
     box-sizing: border-box;
     width: 49%;
     margin: 0 auto;
-    margin-top: 15%;
-
+    margin-top: 18%;
+    margin-bottom: 0%;
 }
 
 .main h1 {
@@ -46,33 +45,39 @@ body {
 }
 
 
-/* wonky line font size */
-.main p, #text {
-    display: inline-block;
-    font-size: 2rem;
-    font-family:'Arvo';
-}
-
-
  a {
     text-decoration: none;
  }
-/*Typing animation */
-#text {
-	display: inline-block;
-	vertical-align: middle;
-	color: black;
+
+ /*Typing animation */
+ #text, #normal{
+	display: inline-block;	
+    color: black;
     letter-spacing: 2px;
-    font-family: 'Arvo';
+    font-family:'Arvo';
+    font-size: 2rem;
+    margin-top: -3%;
 }
+
+#text {
+    color:#001eff;
+}
+ 
+#line {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
 
 #cursor {
 	display: inline-block;
 	vertical-align: middle;
     width: 0.1rem;
 	height: 2rem;
-    background-color: black;
-    
+    background-color: #001eff;
+    margin-top: -3%; 
 }
 
 @keyframes blink {
@@ -83,5 +88,4 @@ body {
 		background-color: black; 
 	}
 }
-
 
