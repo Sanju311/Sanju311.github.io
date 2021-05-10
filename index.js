@@ -1,11 +1,11 @@
 
 // List of sentences
 var _CONTENT = [  
-	"I'm Developer", 
-	"I'm Student",
-	"I'm Problem Solver",
-	"I'm Detail Oriented",
-	"I'm Passionate about tech"
+	"Developer", 
+	"Student",
+	"Problem Solver",
+	"Detail Oriented",
+	"Passionate about tech"
 ];
 
 // Current sentence being processed
@@ -27,12 +27,7 @@ var _INTERVAL_BLINK;
 // Implements typing effect
 function Type() { 
 	// Get substring with 1 characater added
-	
-	if (_ELEMENT.innerHTML == "I'm "){
-		var text =  _ELEMENT.innerHTML.concat(_CONTENT[_PART].substring(3, _PART_INDEX + 1));
-	}
-	else 
-		var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
 
 	_ELEMENT.innerHTML = text;
 	_PART_INDEX++;
@@ -60,7 +55,7 @@ function Delete() {
 	_PART_INDEX--;
 
 	// If sentence has been deleted then start to display the next sentence
-	if(text === "I'm ") {
+	if(text === "") {
 		clearInterval(_INTERVAL_VAL);
 		clearInterval(_INTERVAL_BLINK);
 
@@ -70,8 +65,7 @@ function Delete() {
 		else
 			_PART++;
 		
-		_PART_INDEX = 3;
-
+		_PART_INDEX = 0;
 		// Start to display the next sentence after some time
 		setTimeout(function() {
 			_CURSOR.style.display = 'inline-block';
