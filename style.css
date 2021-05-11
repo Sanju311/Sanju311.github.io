@@ -1,16 +1,17 @@
+/* General Template*/
 body {
     margin:0 auto;
     background-image: url("7-copy.jpeg");
     background-size: cover;
+    background-attachment: fixed;
 }
-
 
 .nav-right{
     display: flex;
     position: fixed;
     top: 2%;
     right: 1%;
-    width: 25%;
+    width: 30%;
     justify-content: space-around;
 }
 
@@ -23,16 +24,23 @@ body {
 
 .nav-right a, .nav-left a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Arvo';
     font-weight: 100;
 }
 
+a {
+    text-decoration: none;
+}
+
+
+
+/*Home Page*/
 .main{
     box-sizing: border-box;
-    width: 49%;
+    width: 50%;
     margin: 0 auto;
-    margin-top: 18%;
+    margin-top: 16%;
     margin-bottom: 0%;
 }
 
@@ -44,12 +52,14 @@ body {
     font-weight: 900;
 }
 
+ 
+#bottom-line {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'arvo';
+}
 
- a {
-    text-decoration: none;
- }
-
- /*Typing animation */
+/*Typing animation */
  #text, #normal{
 	display: inline-block;	
     color: black;
@@ -57,7 +67,7 @@ body {
     font-family:'Arvo';
     font-size: 2rem;
     margin-top: -3%;
-}
+ }
 
 #text {
     color:#001eff;
@@ -67,9 +77,6 @@ body {
     margin: 0 auto;
     text-align: center;
 }
-
-
-
 
 #cursor {
 	display: inline-block;
@@ -88,4 +95,69 @@ body {
 		background-color: black; 
 	}
 }
+
+
+/*Projects Page*/
+
+/*Collapsible*/
+.collapsible {
+    background-color:#708090 ;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    max-width: 55%;
+    box-sizing: border-box;
+    margin-top: 8%;
+    display: flex;
+    border-radius: 2%;
+}
+
+.inner-collapsible {
+    box-sizing: border-box;
+    width: 95%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+
+}
+
+.inner-collapsible h3{
+    font-family: 'arvo';
+    font-size: 1.3rem;
+    display: inline;
+}  
+
+span{
+    font-family: 'Lato', sans-serif;
+    text-align: right;
+    font-size: 1.3rem;
+    float: right;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 0.5%;
+}
+
+.inner-collapsible p {
+    font-family: 'Lato', sans-serif;
+    display: inline;
+    font-size: 1.2rem;
+}
+
+.active, .collapsible:hover {
+    background-color: #778899;
+  }
+  
+  .hidden-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
 
