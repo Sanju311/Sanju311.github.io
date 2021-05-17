@@ -1,7 +1,7 @@
 /* General Template*/
 body {
     margin:0 auto;
-    background-image: url("7-copy.jpeg");
+    background-image: url("7-real.jpeg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -16,21 +16,61 @@ body {
 }
 
 .nav-left{
-    display: flex;
+    display: block;
     position: fixed;
     top: 2%;
     left: 1.5%;
 }
 
-.nav-right a, .nav-left a {
+.nav-right a, .nav-left a{
     color: white;
     font-size: 1.3rem;
     font-family: 'Arvo';
     font-weight: 100;
+    cursor: pointer;
 }
 
 a {
     text-decoration: none;
+
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+/*Drop Down Animation*/
+.drop-down{
+    list-style-type: none;
+    margin-top: 3.5vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+
+}
+
+.drop-down img{
+    width: 3.5vh;
+    height: auto;
+    filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(31deg) brightness(106%) contrast(108%);
+}
+
+
+/*
+.img-1{
+    display: none;
+}
+.img-2{
+    display: none;
+}
+.img-3{
+    display: none;
+}*/
+
+.drop-down img:hover{
+    filter: invert(78%) sepia(1%) saturate(80%) hue-rotate(315deg) brightness(108%) contrast(94%);
 }
 
 
@@ -97,8 +137,8 @@ a {
 }
 
 
-/*Projects Page*/
 
+/*Projects Page*/
 /*Collapsible*/
 .collapsible {
     background-color:#708090 ;
@@ -109,7 +149,7 @@ a {
     margin: 0 auto;
     max-width: 55%;
     box-sizing: border-box;
-    margin-top: 8%;
+    margin-top: 5%;
     display: flex;
     border-radius: 2%;
 }
@@ -130,7 +170,7 @@ a {
     display: inline;
 }  
 
-span{
+.expand_text{
     font-family: 'Lato', sans-serif;
     text-align: right;
     font-size: 1.3rem;
@@ -141,6 +181,20 @@ img {
     width: 100%;
     height: auto;
     margin-top: 0.5%;
+    margin-bottom: 1%;
+}
+
+.expand_text_inline{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+
+}
+
+.company_caption{
+    display: inline;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
 }
 
 .inner-collapsible p {
@@ -149,15 +203,47 @@ img {
     font-size: 1.2rem;
 }
 
-.active, .collapsible:hover {
+
+.collapsible:hover {
     background-color: #778899;
   }
   
-  .hidden-content {
+.hidden-content {    
     padding: 0 18px;
     display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-  }
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+p.hidden-text{
+    width: 10%;
+    display: none;
+}
+
+.column{
+  width: 50%;
+}
+
+.full_length{
+    flex-basis: 100%;
+}
+
+.column-title{
+    text-align: center;
+    display: block;
+}
+
+.hidden-list li{
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.progress-pic{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
 
 
