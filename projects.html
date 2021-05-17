@@ -2,7 +2,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Sanju's Portfolio</title>
+  <title>Sanju's Projects</title>
   <meta name="author" content="Sanju Sathiyamoorthy">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet" type="text/css">
@@ -15,48 +15,65 @@
 
 <body>
   
-    <div class="nav-left"> 
+  <div class="nav-left"> 
     <a>Contact</a>
+    <div class="drop-down">
+      <a href="https://ca.linkedin.com/in/sanju-sathiyamoorthy" target="_blank"> <img class ="img-1"src="linkedin.svg" > </a>
+      <a href="https://github.com/Sanju311" target="_blank"> <img class ="img-2" src="github.svg" > </a>
+      <a href="mailto:s23sathi@uwaterloo.ca" target="_blank"> <img class ="img-3" src="mail.svg" > </a>
+    </div>  
   </div>
   
   <div class="nav-right">
     <a href="index.html">About </a>
-    <a href="projects.html" style="text-decoration: underline;">Projects</a>
-    <a href="">Work</a>
-    <a href="Resume .pdf" target="_blank">Resume</a>
+    <a href="Projects.html" style="text-decoration: underline;">Projects</a>
+    <a href="work.html">Work</a>
+    <a href="resources/Resume .pdf" target="_blank">Resume</a>
   </div>
   
   <div class = "collapsible">
-    <div class ="inner-collapsible">
-        <h3> Code Block Arcade Game </h3>
-        <span>Click to Expand</span>
-        <img src="cropped 640-364.gif">
-        <p> From Super Smash Bros to Call of Duty, I've always been an avid gamer.
+    <div class ="inner-collapsible" >
+      <h3> Code Block Arcade Game </h3>
+      <span class="expand_text">Click to Expand </span>
+      <img src="1000 x auto final.gif"> 
+      <p><strong>Project Duration:</strong> 1 month</p> <br> <br>
+      <p> From Super Smash Bros to Call of Duty, I've always been an avid gamer.
             So when the opportunity arose to learn something new for a school project, naturally 
             I chose to create a video game. Having no prior coding or game design experience, I knew 
-            it would be challenging but I was determined</p>
+            it would be challenging but I was determined. <a href="https://arcade.gamesalad.com/games/147158" target="_blank">(Click to Play)</a></p> <br>
+      
+      <div class="hidden-content" style="display:none;">
+        <div class="column">
+          <div class="column-title"><h3>Skills Used</h3></div>
+          <ul class="hidden-list">
+            <li><strong>Problem Solving:</strong> <br>Figuring out optimal way to implement game's mechanics (ex: physics of the missile chasing player, lasers being aimed etc.) </li> <br>
+            <li><strong>Grit:</strong><br> Pushing through numerous set backs, (laptop broke & progress lost) , days of debugging and learning to be resilient in the face of difficulty</li><br>
+            <li><strong>Logic:</strong><br> Having never coded at the time, implementing the games rules with code blocks was a challenge</li><br>
+          </ul>
+        </div>
+
+        <div class="column">
+          <div class="column-title"><h3>What I Learned</h3></div>
+          <ul class="hidden-list">
+            <li> <strong>Game Design </strong> <br> Practice developing UX/UI, design for the game (ex:sprites, animations, sounds, menus, loading screens)</li> <br>
+            <li> <strong>Code Blocks</strong> <br> Learned about Code blocks and it's logic which is transferable to real development</li> <br>
+            <li><strong>Debugging:</strong> <br> Learning how to go about testing and fixing problems in code </li>
+          </ul>
+        </div>
+      
+      </div>  
+    
     </div>
-  </div>
-  <div class="content">
 
   </div>
   
-
-  <div class = "collapsible">
+  <div class = "collapsible" style="margin-bottom: 5%;">
     <div class ="inner-collapsible">
-        <h3> Currently In progress </h3>
-        <img src="progress-pic.png" id="progress-pic">
+        <img class="progress-pic"src="progress-pic.png">
     </div>
   </div>
-  <div class="hidden-content">
-
-  </div>
-  
-  
-
-</div>
-
 
 </body>
 
 </html>
+
