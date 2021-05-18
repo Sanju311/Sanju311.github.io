@@ -136,7 +136,16 @@ span.bold {
 	}
 }
 
+.not_optimized {
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+}
 
+.not_optimized h5{
+   color: red;
+   font-size: 1.4rem;
+}
 
 /*Projects Page*/
 /*Collapsible*/
