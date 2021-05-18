@@ -1,6 +1,44 @@
+//Drop-down Icons
+var nav_left_a = document.querySelector(".nav-left a");
+var drop_down = document.querySelector(".drop-down");
+var img_1 = document.querySelector(".img-1");
+var img_2 = document.querySelector(".img-2");
+var img_3 = document.querySelector(".img-3");
+
+/*var images = [img_1, img_2, img_3];*/
+
+drop_down.style.display = "none";
+
+/*function icon_delay (num) {
+	images[num].style.display= "inline";
+}
+
+function icon_delete () {
+	for(var i = 0; i < images.length; i++){
+		images[i].style.display= "none";
+	}
+}*/
+
+function click () {
+	if (drop_down.style.display == "none"){
+		drop_down.style.display = "flex";
+		
+		/*for(var i = 0; i < images.length; i++){
+			setTimeout(icon_delay, 4000 , i);
+		}*/
+	} else {
+		drop_down.style.display = "none";
+	}
+}
+nav_left_a.addEventListener("click", click);
+
+
+
+
+//Typing Animation
 
 // List of sentences
-var _CONTENT = [  
+var _CONTENT = [   
 	"Developer", 
 	"Student",
 	"Problem Solver",
@@ -76,5 +114,30 @@ function Delete() {
 
 // Start the typing effect on load
 _INTERVAL_VAL = setInterval(Type, 150);
+
+
+//Collapsible Block	
+var hidden_content = document.querySelector(".hidden-content");
+var Collapsible = document.querySelector(".collapsible");
+var hidden_p = document.querySelector(".expand_text_inline");
+var hidden_text = document.querySelector(".hidden-text");
+
+//hidden_p.style.display = "inline";
+
+function hide_content () {
+	if (hidden_content.style.display == null || hidden_content.style.display == "none" ){
+		hidden_content.style.display = "flex";
+		hidden_p.style.display = "none";
+		hidden_text.style.display = "inline";
+
+	  } else {
+		hidden_content.style.display = "none";
+		hidden_p.style.display = "inline";
+		hidden_text.style.display = "none";
+	  }
+}
+Collapsible.addEventListener("click", hide_content);
+
+
 
 
