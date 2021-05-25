@@ -118,10 +118,10 @@ _INTERVAL_VAL = setInterval(Type, 150);
 
 
 //Collapsible Block	
-var hidden_content = document.querySelector(".hidden-content");
-var Collapsible = document.querySelector(".collapsible");
-var hidden_p = document.querySelector(".expand_text_inline");
-var hidden_text = document.querySelector(".hidden-text");
+var hidden_content = document.querySelectorAll(".hidden-content");
+var Collapsible = document.querySelectorAll(".collapsible");
+var hidden_p = document.querySelectorAll(".expand_text_inline");
+var hidden_text = document.querySelectorAll(".hidden-text");
 
 //hidden_p.style.display = "inline";
 
