@@ -39,11 +39,12 @@ nav_left_a.addEventListener("click", click);
 
 // List of sentences
 var _CONTENT = [   
-	"Developer", 
-	"Student",
-	"Problem Solver",
+
+	"a Problem Solver",
+	"a Developer", 
 	"Detail Oriented",
-	"Passionate about tech"
+	"Passionate about tech",
+	"a Student"
 ];
 
 // Current sentence being processed
