@@ -110,7 +110,7 @@ span.bold {
  }
 
 #text {
-    color:#001eff;
+    color:#990F02;
 }
  
 #line {
@@ -123,7 +123,7 @@ span.bold {
 	vertical-align: middle;
     width: 0.1rem;
 	height: 2rem;
-    background-color: #001eff;
+    background-color:#990F02;
     margin-top: -3%; 
 }
 
