@@ -1,0 +1,246 @@
+/* General Template*/
+body {
+    margin:0 auto;
+    background-image: url("/Users/sanjusathiyamoorthy/Desktop/Side Projects/Portfolio/resources/9.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav-right{
+    display: flex;
+    position: fixed;
+    top: 2%;
+    right: 1%;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.nav-left{
+    display: block;
+    position: fixed;
+    top: 2%;
+    left: 1.5%;
+}
+
+.nav-right a, .nav-left a{
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Arvo';
+    font-weight: 100;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+/*Drop Down Animation*/
+.drop-down{
+    list-style-type: none;
+    margin-top: 3.5vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+}
+
+.drop-down img{
+    width: 3.5vh;
+    height: auto;
+    filter: invert(100%) sepia(5%) saturate(0%) hue-rotate(31deg) brightness(106%) contrast(108%);
+}
+
+/*
+.img-1{
+    display: none;
+}
+.img-2{
+    display: none;
+}
+.img-3{
+    display: none;
+}*/
+
+.drop-down img:hover{
+    filter: invert(78%) sepia(1%) saturate(80%) hue-rotate(315deg) brightness(108%) contrast(94%);
+}
+
+
+/*Home Page*/
+.main{
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 16%;
+    margin-bottom: 0%;
+    position: relative;
+    right: 8%;
+}
+
+.main h1 {
+    text-align:left;
+    font-size: 4rem;
+    color: black;
+    font-family:'Arvo';
+    font-weight: 900;
+}
+
+ 
+#bottom-line {
+    text-align: left;
+    font-size: 1.5rem;
+    font-family: 'arvo';
+}
+
+/*Typing animation */
+ #text, #normal{
+	display: inline-block;	
+    color: black;
+    letter-spacing: 2px;
+    font-family:'Arvo';
+    font-size: 2rem;
+    margin-top: -3%;
+ }
+
+#text {
+    color:#001eff;
+}
+ 
+#line {
+    margin: 0 auto;
+    text-align: left;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+    width: 0.1rem;
+	height: 2rem;
+    background-color: #001eff;
+    margin-top: -3%; 
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: black; 
+	}
+}
+
+
+
+/*Projects Page*/
+/*Collapsible*/
+.collapsible {
+    background-color:#708090 ;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    max-width: 55%;
+    box-sizing: border-box;
+    margin-top: 5%;
+    display: flex;
+    border-radius: 2%;
+}
+
+.inner-collapsible {
+    box-sizing: border-box;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+
+}
+
+.inner-collapsible h3{
+    font-family: 'arvo';
+    font-size: 1.3rem;
+    display: inline;
+}  
+
+.expand_text{
+    font-family: 'Lato', sans-serif;
+    text-align: right;
+    font-size: 1.3rem;
+    float: right;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+}
+
+.expand_text_inline{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+
+}
+
+.company_caption{
+    display: inline;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.inner-collapsible p {
+    font-family: 'Lato', sans-serif;
+    display: inline;
+    font-size: 1.2rem;
+}
+
+
+.collapsible:hover {
+    background-color: #778899;
+  }
+  
+.hidden-content {    
+    padding: 0 18px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+p.hidden-text{
+    width: 10%;
+    display: none;
+}
+
+.column{
+  width: 50%;
+}
+
+.full_length{
+    flex-basis: 100%;
+}
+
+.column-title{
+    text-align: center;
+    display: block;
+}
+
+.hidden-list li{
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.progress-pic{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
